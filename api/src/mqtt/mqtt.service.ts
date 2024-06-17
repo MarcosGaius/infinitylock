@@ -4,7 +4,7 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class MqttService {
   private options: mqtt.IClientOptions;
-  private DELAY_MS = 5000;
+  private DELAY_MS = 3000;
   private OPEN_MESSAGE = '{"Acao":"On"}';
   private CLOSE_MESSAGE = '{"Acao":"Off"}';
   constructor() {

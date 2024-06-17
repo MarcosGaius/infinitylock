@@ -4,6 +4,7 @@ import { MqttService } from './mqtt.service';
 
 @Module({
   controllers: [MqttController],
-  providers: [MqttService]
+  providers: [MqttService],
+  exports: [MqttService],
 })
 export class MqttModule {}

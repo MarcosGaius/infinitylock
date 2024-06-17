@@ -7,6 +7,6 @@ export class MqttController {
 
   @Post()
   publish() {
-    return this.mqttService.publishOnOff(process.env.MQTT_TOPIC);
+    return this.mqttService.publishOnOff(process.env.MQTT_CHOPP_TOPIC);
   }
 }
