@@ -25,6 +25,7 @@ export class AuthController {
   @SetRequestTimeout(60000)
   @Post('signup')
   signUp(@Body() createUserDto: CreateUserDto) {
+    console.log('createUserDto:', createUserDto);
     return this.authService.signUp(createUserDto);
   }
 

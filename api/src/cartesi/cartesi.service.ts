@@ -67,7 +67,7 @@ export class CartesiService {
       }),
       {
         method: 'POST',
-        cartesiNodeUrl: 'http://localhost:8080',
+        cartesiNodeUrl: process.env.CARTESI_URL,
       },
     );
 
